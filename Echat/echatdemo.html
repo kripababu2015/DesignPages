@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<head>
+<title>E-chat</title>
+<style>
+      *
+      {
+        box-sizing: border-box;
+      }
+
+
+      header
+      {
+        background-color: #103d82;
+        color: white;
+        height: 100px;
+        width: 100%;
+
+      }
+      .div1
+      {
+        font-size: 35px;
+        height: 90px;
+        width: 50%;
+        float: left;
+        padding: 20px;
+        margin-left: 15px;
+      }
+      .div2
+      {
+        height: 90px;
+        font-size: 15px;
+        width: 15%;
+        float: left;
+        padding: 20px;
+
+
+      }
+      .div3
+      {
+        height: 90px;
+        font-size: 15px;
+        width: 15%;
+        float: left;
+        padding: 20px;
+
+
+      }
+      .div4
+      {
+        height: 90px;
+        font-size: 15px;
+        width: 10%;
+        float: left;
+        padding: 35px;
+      }
+      .div5
+      {
+
+        width: 100%;
+        height: 500px;
+      }
+      .sec1
+      {
+
+         width: 100%;
+         height: 100%;
+      }
+      .div6
+      {
+
+        width: 180px;
+        height: 180px;
+        float: left;
+        padding: 0px;
+      }
+       .div7
+      {
+        border: solid 1px;
+        width: 135px;
+        height: 135px;
+        float: left;
+        padding: 0px;
+
+      }
+      .div8
+      {
+        width: 50px;
+        height: 50px;
+        padding: 40px;
+        font-size: 40px;
+        float: left;
+
+      }
+      .left
+      {
+        width: 50%;
+        height: 400px;
+
+        float: left;
+
+
+      }
+      .right
+      {
+        width: 50%;
+        height: 95%;
+
+        float: left;
+
+      }
+      .foot
+      {
+        width: 100%;
+        height: 200px;
+        background-color: white;
+        color: blue;
+      }
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+
+
+</style>
+</head>
+    <body>
+
+        <header>
+            <div class="div1">E-Chat</div>
+                <div class="div2">
+                  <label>Email or Phone</label><br>
+                  <input type="text" name="Email">
+                </div>
+            <div class="div3">
+                  <label>Password</label><br>
+                  <input type="Password" name="pass">
+                  <a href="" style="color: white;font-size: 15px;">Forgot password?</a>
+            </div>
+            <div class="div4">
+                  <input type="button" value="Login">
+
+            </div>
+        </header>
+        <div class="div5">
+        <section class="sec1">
+              <div class="left">
+
+                    <h3 style="margin-left: 10px;">Recent Logins</h3>
+                        <div class="div6">
+                          <div class="div7">
+                            <img src="rose.jpg" style="width: 135px;height: 135px;">
+                          </div>
+                        </div>
+
+                        <div class="div6">
+                          <div class="div7">
+                            <div class="div8">
+                               <i style="padding: 10px;text-align: center;">+</i>
+                            </div>
+                            <div style="width: 135px;height:70px;padding: 15px;text-align: left;">
+                               <label style="font-size: 20px;margin-top: 15px;">AddAccount</label>
+                            </div>
+                          </div>
+                        </div>
+
+              </div>
+              <div class="right">
+                  <h3>Create New Account</h3>
+
+				  <form action="" method="post">
+				  <input type="text" name=name placeholder="First Name">  <input type="text" name=surname placeholder="surname"><br><br>
+				  <input type="text" name=email placeholder="mobile number or email address" size="47"><br><br>
+				  <input type="password" name=password placeholder="password"><br><br>
+				  <label>Birthday</label><br><br>
+				  <select id="date">
+				    <option value="1">1</option>
+				    <option value="2">2</option>
+				    <option value="3">3</option>
+				    <option value="4">4</option>
+				  </select>     <select id="month">
+				    <option value="jan">jan</option>
+				    <option value="feb">feb</option>
+				    <option value="mar">mar</option>
+				    <option value="april">april</option>
+				  </select>     <select id="month">
+				    <option value="1990">1990</option>
+				    <option value="1991">1991</option>
+				    <option value="1992">1992</option>
+				    <option value="1993">1993</option>
+				  </select><br><br>
+				  <label>Gender</label><br><br>
+				  <input type="radio" name="gender" value="Male"><label>Male</label><input type="radio" name="gender" value="Female"><label>Female</label><input type="radio" name="gender" value="custom"><label>Custom</label><br><br>
+				  <input type="button" onclick="alert('sign up successfully')"class="button"  value="sign up">
+
+				  </form>
+
+
+              </div>
+          </section>
+        </div>
+        <footer>
+        <div class="foot">
+
+        </div>
+
+        </footer>
+      <script type="text/javascript">
+        function pass_validation(argument) {
+          alert("Signup successfully")
+        }
+      </script>
+
+
+    </body>
+</html>

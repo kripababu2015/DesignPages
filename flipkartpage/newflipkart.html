@@ -1,0 +1,894 @@
+<html lang="en">
+<head>
+<title>flipkart.com</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+		*
+		{
+			box-sizing: border-box;
+ 		}
+
+		.hd
+		{
+			background-color: #226ce3;
+	        color: white;
+	        height: 80px;
+	        width: 100%;
+		}
+		/*--div for header logo--*/
+		.div_logo
+				{
+					font-size: 30px;
+					font-weight:bold;
+			        height: 30px;
+			        width: 20%;
+			        float: left;
+			        margin-left: 200px;
+					padding-top:20px;
+				}
+
+				/*--------------style for explore image------------------*/
+				.explore
+				{
+					font-size: 11px;
+					font-style: italic;
+					margin-top: -1px;
+					color:white;
+				}
+				/*--------------style for exploreplus------------------*/
+				.plus
+				{
+					color: #ffe500;
+					font-weight: 500;
+					margin-right: 2px
+				}
+.imglogo {
+							display: block;
+							width:75px;
+						  }
+				a, img {
+						text-decoration: none;
+						color: inherit;
+						border: none;
+						outline: none;
+		}
+		/*--------------style for texttbox in header------------------*/
+						.div_text
+						{
+							display:inline-flex;
+							width: 600px;
+							height: 40px;
+							float: left;
+							padding: 10px;
+							width:25%;
+
+
+
+				}
+				/*--------------style for search------------------*/
+						.search_text
+						{
+							margin-top:9px;
+							margin-left:-180px;
+							float:center;
+							border:1px solid #2874f0 !important;
+							border-top-left-radius:0 !important;
+							border-bottom-left-radius:0 !important;
+							border-top-right-radius:0 !important;
+							border-bottom-right-radius:0 !important;
+							box-shadow:none !important;
+		}
+		.input-group-text
+				{
+
+					background:white !important;
+					padding: 10px;
+					margin-top:300px;
+					padding-top: 10px;
+
+					border:1px solid blue !important;
+					margin:8.5px 500px -15px 0!important;
+                    border-top-left-radius:0 !important;
+					border-bottom-left-radius:0 !important;
+				    border-top-right-radius:0 !important;
+					border-bottom-right-radius:0 !important;
+
+					cursor:pointer
+				}
+
+				.fa-search
+				{
+					color:#2874f0;
+		}
+		.c
+				{
+					width: 100px;
+					height: 30px;
+					float: left;
+					padding: 16px;
+					font-size: 16px;
+				}
+				.d
+				{
+					background-color:#2874f0;
+
+
+				}
+				.d:after
+				{
+					content:'';
+					clear:both;
+					display:block;
+				}
+				.d ul
+				{
+					list-style:none;
+					margin:0;
+				}
+				.d> ul > li
+				{
+					float:right;
+					position:relative;
+				}
+				.d ul li a
+				{
+					text-decoration:none;
+					color:white;
+					padding:15px 20px;
+					display:block;
+				}
+				.d ul li button
+								{
+									text-decoration:none;
+									color:blue;
+									padding:15px 20px;
+									display:block;
+				}
+				.d ul li:hover a
+				{
+					background:white;
+					color: black;
+				}
+				.d ul ul
+				{
+					position:absolute;
+					padding:0;
+					min-width:160px;
+					display:none;
+					top:100%;
+					right-side:200%;
+					left:0;
+				}
+				.d ul li:hover > ul
+				{
+					display:block;
+				}
+				.d ul ul li:hover a
+				{
+					background:#226ce3;
+					color: white;
+				}
+.under
+		{
+			width: 100%;
+			height: 70px;
+			float: left;
+			background-color: #22bae3
+
+		}
+.fa-heart
+{
+	color:#2874f0;
+}
+.fa-user
+{
+	color:#2874f0;
+}
+.fa-file-text-o
+{
+	color:#2874f0;
+}
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.alert {
+    font-size: 0.85em;
+}
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.fa-envelope
+{
+	color:#2874f0;
+}
+.fa-lock
+{
+	color:#2874f0;
+}
+.fa-plus-circle
+{
+	color:#2874f0;
+}
+.fa-bars
+{
+	color:#2874f0;
+}
+.fa-bell-o
+{
+	color:#2874f0;
+}
+.fa-question-circle
+{
+	color:#2874f0;
+}
+.fa-line-chart
+{
+color:#2874f0;
+}
+.fa-download
+{
+color:#2874f0;
+}
+.d1 ul
+		{
+			list-style:none;
+			margin:0;
+		}
+		.d1> ul > li
+		{
+			float:left;
+			position:relative;
+		}
+		.d1 ul li a
+		{
+			text-decoration:none;
+			color:black;
+			padding:15px 20px;
+			display:block;
+		}
+		.d1 ul li:hover a
+		{
+			background:white;
+			color: black;
+		}
+		.d1 ul ul
+		{
+			position:absolute;
+			padding:0;
+			min-width:260px;
+			display:none;
+			top:100%;
+			right-side:200%;
+			left:0;
+		}
+
+
+
+
+		.d1 ul li:hover > ul
+		{
+			display:block;
+		}
+		.d1 ul ul li:hover a
+		{
+			background:white;
+			color: black;
+		}
+.div_img
+				{
+					font-size: 30px;
+					font-weight:bold;
+			        height: 350px;
+			        width: 100%;
+			        float: left;
+			        margin-left: 10px;
+					padding-top:20px;
+				}
+				.div_img2
+								{
+									font-size: 30px;
+									font-weight:bold;
+							        height: 100px;
+							        width: 100%;
+							        float: left;
+							        margin-left: 100px;
+									padding-top:5px;
+				}
+				.img
+				{
+				 position: absolute;
+				     top: 0;
+				     left: 0;
+				     bottom: 0;
+				     right: 0;
+				     max-width: 100%;
+				     max-height: 100%;
+				     transition: opacity .5s linear
+				     }
+		.f
+		{
+			width: 100%;
+			height: 400px;
+			float: left;
+
+		}
+		.g
+		{
+
+			height: 210px;
+			float: left;
+			margin-top: 25px;
+
+		}
+		.m
+				{
+					width: 100%;
+					height: 300px;
+					background-color: #061836;
+					float: left;
+
+				}
+				.n
+				{
+					margin-top: 10px;
+					margin-left: 8px;
+					width: 200px;
+					height: 250px;
+					float: left;
+
+
+				}
+				.o
+				{
+					width: 175px;
+					height: 50px;
+					font-size: 20px;
+					text-align: left;
+					color: grey;
+				}
+				.p
+				{
+					width: 157px;
+					height: 210px;
+					font-size: 18px;
+					text-align: left;
+					color: white;
+
+				}
+
+		</style>
+<body>
+	<header class="hd">
+	<div class="div_logo"><a href="/"><img src="flipkart.jpg" alt="flipkart" class="imglogo"/></a>
+	<a class="explore" href="/plus">Explore<!-- -->
+	<span class="plus"><style="color:#ffe500";>Plus</style></span>
+    <img src="plus.png" width="10"></a>
+
+		</div>
+		<div class="div_text">
+		<!-- Search form -->
+	<form class="search_text" action="/action_page.php">
+	  <input type="text" placeholder="Search products" name="search">
+	  <button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+
+		</div>
+		<nav class="d">
+
+						<ul>
+							<li><a href="alert.html"><i class="fa fa-shopping-cart my-cart-icon"></i>&nbspCart</a></li>
+						<li><a href="#">More<span class="caret"></span></a>
+							<ul>
+								<li><a href="#"><i class="fa fa-bell-o"></i>&nbspNotification Preferences</a></li>
+								<li><a href="#"><i class="fa fa-question-circle"></i>&nbspCustomer Care</a></li>
+								<li><a href="#"><i class="fa fa-line-chart"></i>&nbspAdvertise</a></li>
+								<li><a href="#"><i class="fa fa-download"></i>&nbspDownload App</a></li>
+							</ul>
+						</li>
+
+						<li><button type="button" class="btn btn-light">Login</button></a>
+							<ul>
+								<li><a href="login.html"><i class="fa fa-user"></i>&nbspsignup</a></li>
+
+								<li><a href="#"><i class="fa fa-plus-circle"></i>&nbspFlipkart zone</a></li>
+								<li><a href="#"><i class="fa fa-file-text-o"></i>&nbspOrders</a></li>
+								<li><a href="#"><i class="fa fa-heart"></i>&nbspWishlist</a></li>
+								<li><a href="#"><i class="fa fa-bars"></i>&nbspRewards</a></li>
+							</ul>
+						</li>
+						</ul>
+					</nav>
+
+
+				<div class="c">
+					<label style="margin-top: 30px;font-style: all;">Cart</label>
+				</div>
+	</header>
+	<div>
+					<nav class="d1">
+
+					<ul>
+
+					<li><a href="#">Electronics<span class="caret"></span></a>
+						<ul>
+							<div class="container-fluid">
+
+							  <div class="row">
+							    <div class="col-xs-6 col-sm-4" style="background-color:white;">
+							      Television<br>
+							      speakers<br>
+							      Camera<br>
+							      DSLR<br>
+							      Lense<br>
+							      Bluetooth speaker<br>
+							      smart home automation<br>
+							      google home<br>
+							      tripods<br>
+							      speakers<br>
+							    </div>
+							    <div class="col-xs-6 col-sm-4" style="background-color:white;">mobile<br>
+							    Television<br>
+							      speakers<br>
+							      Camera<br>
+							      DSLR<br>
+							      Lense<br>
+							      Bluetooth speaker<br>
+							      smart home automation<br>
+							      google home<br>
+							      tripods<br>
+							      </div>
+							    <!-- Add clearfix for only the required viewport -->
+							    <div class="clearfix visible-xs"></div>
+							    <div class="col-xs-6 col-sm-4" style="background-color:white;">mobile Accessories<br>
+							    Television<br>
+							      speakers<br>
+							      Camera<br>
+							      DSLR<br>
+							      Lense<br>
+							      Bluetooth speaker<br>
+							      smart home automation<br>
+							      google home<br>
+
+							      </div>
+
+							  </div>
+							</div>
+
+
+						</ul>
+					</li>
+
+					<li><a href="#">TVs & Appliance<span class="caret"></span></a>
+						<ul>
+							<div class="container-fluid">
+
+														  <div class="row">
+														    <div class="col-xs-6 col-sm-4" style="background-color:white;">
+														      Television<br>
+														      speakers<br>
+														      Camera<br>
+														      DSLR<br>
+														      Lense<br>
+														      Bluetooth speaker<br>
+														      smart home automation<br>
+														      google home<br>
+														      tripods<br>
+														      speakers<br>
+														    </div>
+														    <div class="col-xs-6 col-sm-4" style="background-color:white;">mobile<br>
+														    Television<br>
+														      speakers<br>
+														      Camera<br>
+														      DSLR<br>
+														      Lense<br>
+														      Bluetooth speaker<br>
+														      smart home automation<br>
+														      google home<br>
+														      tripods<br>
+														      </div>
+														    <!-- Add clearfix for only the required viewport -->
+														    <div class="clearfix visible-xs"></div>
+														    <div class="col-xs-6 col-sm-4" style="background-color:white;">mobile Accessories<br>
+														    Television<br>
+														      speakers<br>
+														      Camera<br>
+														      DSLR<br>
+														      Lense<br>
+														      Bluetooth speaker<br>
+														      smart home automation<br>
+														      google home<br>
+														      </div>
+														      </div>
+							</div>
+
+
+						</ul>
+					</li>
+					<li><a href="#">Men<span class="caret"></span></a>
+						<ul>
+							<div class="container-fluid">
+
+														  <div class="row">
+														    <div class="col-xs-6 col-sm-4" style="background-color:white;">
+														      Television<br>
+														      speakers<br>
+														      Camera<br>
+														      DSLR<br>
+														      Lense<br>
+														      Bluetooth speaker<br>
+														      smart home automation<br>
+														      google home<br>
+														      tripods<br>
+														      speakers<br>
+														    </div>
+														    <div class="col-xs-6 col-sm-4" style="background-color:white;">mobile<br>
+														    Television<br>
+														      speakers<br>
+														      Camera<br>
+														      DSLR<br>
+														      Lense<br>
+														      Bluetooth speaker<br>
+														      smart home automation<br>
+														      google home<br>
+														      tripods<br>
+														      </div>
+														    <!-- Add clearfix for only the required viewport -->
+														    <div class="clearfix visible-xs"></div>
+														    <div class="col-xs-6 col-sm-4" style="background-color:white;">mobile Accessories<br>
+														    Television<br>
+														      speakers<br>
+														      Camera<br>
+														      DSLR<br>
+														      Lense<br>
+														      Bluetooth speaker<br>
+														      smart home automation<br>
+														      google home<br>
+														      </div>
+														      </div>
+							</div>
+
+						</ul>
+					</li>
+
+
+					<li><a href="#">Baby & Kids<span class="caret"></span></a>
+						<ul>
+							<div class="container-fluid">
+
+														  <div class="row">
+														    <div class="col-xs-6 col-sm-4" style="background-color:white;">
+														      Television<br>
+														      speakers<br>
+														      Camera<br>
+														      DSLR<br>
+														      Lense<br>
+														      Bluetooth speaker<br>
+														      smart home automation<br>
+														      google home<br>
+														      tripods<br>
+														      speakers<br>
+														    </div>
+														    <div class="col-xs-6 col-sm-4" style="background-color:white;">mobile<br>
+														    Television<br>
+														      speakers<br>
+														      Camera<br>
+														      DSLR<br>
+														      Lense<br>
+														      Bluetooth speaker<br>
+														      smart home automation<br>
+														      google home<br>
+														      tripods<br>
+														      </div>
+														    <!-- Add clearfix for only the required viewport -->
+														    <div class="clearfix visible-xs"></div>
+														    <div class="col-xs-6 col-sm-4" style="background-color:white;">mobile Accessories<br>
+														    Television<br>
+														      speakers<br>
+														      Camera<br>
+														      DSLR<br>
+														      Lense<br>
+														      Bluetooth speaker<br>
+														      smart home automation<br>
+														      google home<br>
+
+                       </div>
+                       </div>
+							</div>
+						</ul>
+					</li>
+					<li><a href="#">Home & Furniture<span class="caret"></span></a>
+						<ul>
+							<div class="container-fluid">
+
+																					  <div class="row">
+																					    <div class="col-xs-6 col-sm-4" style="background-color:white;">
+																					      settie<br>
+																					      soffa<br>
+																					      alamara<br>
+																					      chair<br>
+																					      table<br>
+																					      dining table<br>
+																					      study table<br>
+																					      google home<br>
+																					      tripods<br>
+																					      speakers<br>
+																					    </div>
+																					    <div class="col-xs-6 col-sm-4" style="background-color:white;">mobile<br>
+																					    Television<br>
+																					      speakers<br>
+																					      Camera<br>
+																					      DSLR<br>
+																					      Lense<br>
+																					      Bluetooth speaker<br>
+																					      smart home automation<br>
+																					      google home<br>
+																					      tripods<br>
+																					      </div>
+																					    <!-- Add clearfix for only the required viewport -->
+																					    <div class="clearfix visible-xs"></div>
+																					    <div class="col-xs-6 col-sm-4" style="background-color:white;">mobile Accessories<br>
+																					    Television<br>
+																					      speakers<br>
+																					      Camera<br>
+																					      DSLR<br>
+																					      Lense<br>
+																					      Bluetooth speaker<br>
+																					      smart home automation<br>
+																					      google home<br>
+
+							                       </div>
+							                       </div>
+							</div>
+						</ul>
+					</li>
+					<li><a href="#">Sports,Books & More<span class="caret"></span></a>
+						<ul>
+							<div class="container-fluid">
+
+																				      <div class="row">
+																					    <div class="col-xs-6 col-sm-4" style="background-color:white;">
+																					      Television<br>
+																					      speakers<br>
+																					      Camera<br>
+																					      DSLR<br>
+																					      Lense<br>
+																					      Bluetooth speaker<br>
+																					      smart home automation<br>
+																					      google home<br>
+																					      tripods<br>
+																					      speakers<br>
+																					    </div>
+																					    <div class="col-xs-6 col-sm-4" style="background-color:white;">mobile<br>
+																					    Television<br>
+																					      speakers<br>
+																					      Camera<br>
+																					      DSLR<br>
+																					      Lense<br>
+																					      Bluetooth speaker<br>
+																					      smart home automation<br>
+																					      google home<br>
+																					      tripods<br>
+																					      </div>
+																					    <!-- Add clearfix for only the required viewport -->
+																					    <div class="clearfix visible-xs"></div>
+																					    <div class="col-xs-6 col-sm-4" style="background-color:white;">mobile Accessories<br>
+																					    Television<br>
+																					      speakers<br>
+																					      Camera<br>
+																					      DSLR<br>
+																					      Lense<br>
+																					      Bluetooth speaker<br>
+																					      smart home automation<br>
+																					      google home<br>
+
+							                       </div>
+							                       </div>
+							</div>
+
+						</ul>
+					</li>
+					<li><a href="#">Offer Zone<span class="caret"></span></a>
+						<ul>
+							<div class="container-fluid">
+
+																					  <div class="row">
+																					    <div class="col-xs-6 col-sm-4" style="background-color:white;">
+																					      Television<br>
+																					      speakers<br>
+																					      Camera<br>
+																					      DSLR<br>
+																					      Lense<br>
+																					      Bluetooth speaker<br>
+																					      smart home automation<br>
+																					      google home<br>
+																					      tripods<br>
+																					      speakers<br>
+																					    </div>
+																					    <div class="col-xs-6 col-sm-4" style="background-color:white;">mobile<br>
+																					    Television<br>
+																					      speakers<br>
+																					      Camera<br>
+																					      DSLR<br>
+																					      Lense<br>
+																					      Bluetooth speaker<br>
+																					      smart home automation<br>
+																					      google home<br>
+																					      tripods<br>
+																					      </div>
+																					    <!-- Add clearfix for only the required viewport -->
+																					    <div class="clearfix visible-xs"></div>
+																					    <div class="col-xs-6 col-sm-4" style="background-color:white;">mobile Accessories<br>
+																					    Television<br>
+																					      speakers<br>
+																					      Camera<br>
+																					      DSLR<br>
+																					      Lense<br>
+																					      Bluetooth speaker<br>
+																					      smart home automation<br>
+																					      google home<br>
+
+							                       </div>
+							                       </div>
+							</div>
+						</ul>
+					</li>
+					</ul>
+				</nav>
+
+			</div>
+ <div class="div_img">
+
+<img src="flip1.jpg" alt="flipkart"  class="img-fluid" alt="Responsive image"/  style="width: 100%; height:300px">
+</div>
+
+<div class="f">
+			<h2>Grooming And Hygiene</h2>
+			<div class="g">
+				<img src="flip3.jpg" style="width: 436.28px;height: 234.05px;">
+
+			</div>
+			<div class="g">
+				<img src="flip4.jpg" style="width: 436.28px;height: 234.05px;">
+
+			</div>
+			<div class="g">
+				<img src="flip5.jpg" style="width: 436.28px;height: 234.05px;">
+
+			</div>
+		</div>
+		<div class="f">
+					<h2>Food,Beverage and Suppliment</h2>
+					<div class="g">
+						<img src="flip6.jpg" style="width: 436.28px;height: 234.05px;">
+
+					</div>
+					<div class="g">
+						<img src="flip7.jpg" style="width: 436.28px;height: 234.05px;">
+
+					</div>
+					<div class="g">
+						<img src="flip8.jpg" style="width: 436.28px;height: 234.05px;">
+
+					</div>
+		</div>
+
+
+		<footer>		<div class="m">
+					<div class="n">
+						<div class="o">About</div>
+						<div class="p">
+							<a href="#" style="color: white;">Contact Us</a><br>
+							<a href="#" style="color: white;">About Us</a><br>
+							<a href="#" style="color: white;">Careers</a><br>
+							<a href="#" style="color: white;">Press</a>
+						</div>
+					</div>
+					<div class="n">
+						<div class="o">Help</div>
+						<div class="p">
+							<a href="#" style="color: white;">Payments</a><br>
+							<a href="#" style="color: white;">Shipping</a><br>
+							<a href="#" style="color: white;">Cancellation</a><br>
+							<a href="#" style="color: white;">Returns</a><br>
+							<a href="#" style="color: white;">FAQ</a><br>
+							<a href="#" style="color: white;">Report Infringment</a>
+						</div>
+					</div>
+					<div class="n">
+						<div class="o">Policy</div>
+						<div class="p">
+							<a href="#" style="color: white;">Return Polcy</a><br>
+							<a href="#" style="color: white;">Terms of Use</a><br>
+							<a href="#" style="color: white;">Security</a><br>
+							<a href="#" style="color: white;">Privacy</a><br>
+							<a href="#" style="color: white;">Sitemap</a><br>
+							<a href="#" style="color: white;">EPR Compliance</a>
+						</div>
+					</div>
+					<div class="n">
+						<div class="o">Social</div>
+						<div class="p">
+							<a href="#" style="color: white;">FaceBook</a><br>
+							<a href="#" style="color: white;">Twitter</a><br>
+							<a href="#" style="color: white;">Youtube</a><br>
+
+						</div>
+					</div>
+					<div class="n">
+						<div class="o">Mail Us</div>
+						<div class="p">
+							flipkart2@gmail.com
+						</div>
+					</div>
+					<div class="n">
+						<div class="o">Registered Office Address</div>
+						<div class="p">
+							<address>
+								flipkart,
+								naival street ,
+								Mumbai, 589653,
+							    India
+								phone:0987654321
+							</address>
+
+						</div>
+					</div>
+
+
+
+				</div>
+
+					<script>
+					var slideIndex = 1;
+					showSlides(slideIndex);
+
+					function plusSlides(n) {
+					  showSlides(slideIndex += n);
+					}
+
+					function currentSlide(n) {
+					  showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+					  var i;
+					  var slides = document.getElementsByClassName("mySlides");
+					  var dots = document.getElementsByClassName("dot");
+					  if (n > slides.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = slides.length}
+					  for (i = 0; i < slides.length; i++) {
+					      slides[i].style.display = "none";
+					  }
+					  for (i = 0; i < dots.length; i++) {
+					      dots[i].className = dots[i].className.replace(" active", "");
+					  }
+					  slides[slideIndex-1].style.display = "block";
+					  dots[slideIndex-1].className += " active";
+					}
+					</script>
+</footer>
+	</body>
+	</html>
